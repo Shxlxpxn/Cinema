@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/main_page"
+        android:icon="@drawable/home_button"
+        android:title="@string/btn_home"
+        app:showAsAction="withText"/>
+    <item
+        android:id="@+id/favorites"
+        android:icon="@drawable/favourites"
+        android:title="@string/menu_favorites_title"
+        app:showAsAction="withText"/>
+    <item
+        android:id="@+id/watch_later"
+        android:icon="@drawable/watch_later"
+        android:title="@string/menu_watch_later_title"
+        app:showAsAction="withText"/>
+    <item
+        android:id="@+id/selections"
+        android:icon="@drawable/round_rate_review"
+        android:title="@string/menu_selections_title"
+        app:showAsAction="withText"/>
+</menu>
