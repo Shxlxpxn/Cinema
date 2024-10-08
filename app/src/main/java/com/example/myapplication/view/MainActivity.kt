@@ -1,10 +1,16 @@
-package com.example.myapplication
+package com.example.myapplication.view
 
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import com.example.myapplication.R
 import com.example.myapplication.databinding.ActivityMainBinding
+import com.example.myapplication.domain.Film
+import com.example.myapplication.view.fragments.DetailsFragment
+import com.example.myapplication.view.fragments.FavoritesFragment
+import com.example.myapplication.view.fragments.HomeFragment
+import com.example.myapplication.view.fragments.SelectionsFragment
+import com.example.myapplication.view.fragments.WatchLaterFragment
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding

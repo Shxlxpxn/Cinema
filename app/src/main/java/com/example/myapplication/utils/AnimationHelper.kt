@@ -1,10 +1,9 @@
-package com.amsdevelops.filmssearch
+package com.example.myapplication.utils
 
 import android.app.Activity
 import android.view.View
 import android.view.ViewAnimationUtils
 import android.view.animation.AccelerateDecelerateInterpolator
-import androidx.fragment.app.Fragment
 import java.util.concurrent.Executors
 import kotlin.math.hypot
 import kotlin.math.roundToInt
