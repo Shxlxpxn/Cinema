@@ -63,8 +63,7 @@ class DetailsFragment : Fragment() {
                 detailsDescription.text = film.description
                 detailsFabFavorites.setImageResource(
                     if (film.isInFavorites) R.drawable.favourites_yes
-                    else R.drawable.favourites
-                )
+                    else R.drawable.favourites)
                 detailsFabFavorites.setOnClickListener {
                     if (!film.isInFavorites) {
                         (requireActivity() as? MainActivity)?.addFilmToFavourites(film)
