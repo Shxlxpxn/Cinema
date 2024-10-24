@@ -20,8 +20,10 @@ android {
     }
 
     buildFeatures {
+        buildConfig = true
         viewBinding = true
     }
+
 
     buildTypes {
         release {
@@ -54,6 +56,7 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation ("com.github.bumptech.glide:glide:4.16.0")
     implementation("androidx.cardview:cardview:1.0.0")
     implementation("androidx.room:room-ktx:2.6.1")
     kapt("androidx.room:room-ktx:2.6.1")
@@ -62,4 +65,8 @@ dependencies {
     implementation ("androidx.recyclerview:recyclerview:1.1.0")
     implementation("androidx.room:room-runtime:$room_version")
     annotationProcessor("androidx.room:room-compiler:$room_version")
+    //Retrofit
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation ("com.squareup.retrofit2:converter-gson:2.6.0")
+    implementation ("com.squareup.okhttp3:logging-interceptor:3.12.6")
 }

@@ -5,14 +5,15 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/home_fragment_root"
-    android:visibility="invisible"
     tools:visibility="visible"
     android:background="@drawable/background_home"
-    tools:context=".HomeFragment">
+    tools:context=".view.fragments.HomeFragment">
 
     <androidx.appcompat.widget.SearchView
         android:id="@+id/search_view"
         android:background="@drawable/background_search_view"
+        android:clickable="true"
+        app:iconifiedByDefault="false"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"

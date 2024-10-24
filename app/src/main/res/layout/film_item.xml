@@ -7,7 +7,7 @@
     android:elevation="1dp"
     app:cardCornerRadius="10dp">
 
-    <com.example.myapplication.RatingDonutView
+    <com.example.myapplication.view.customviews.RatingDonutView
         android:id="@+id/rating_donut"
         android:layout_width="50dp"
         android:layout_height="50dp"

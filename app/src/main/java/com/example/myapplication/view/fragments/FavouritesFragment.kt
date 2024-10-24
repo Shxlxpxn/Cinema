@@ -1,15 +1,17 @@
-package com.example.myapplication
+package com.example.myapplication.view.fragments
 
-import TopSpacingItemDecoration
-import android.content.Intent
+import com.example.myapplication.view.rv_adapters.TopSpacingItemDecoration
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.amsdevelops.filmssearch.AnimationHelper
+import com.example.myapplication.view.rv_adapters.FilmListRecyclerAdapter
+import com.example.myapplication.view.MainActivity
+import com.example.myapplication.utils.AnimationHelper
 import com.example.myapplication.databinding.FragmentFavouritesBinding
+import com.example.myapplication.domain.Film
 
 class FavoritesFragment : Fragment() {
 
@@ -32,7 +34,7 @@ class FavoritesFragment : Fragment() {
         val favoritesList: List<Film> = (requireActivity() as? MainActivity)?.getFilmsFromFavourites()!!
 
         binding.favoritesRecycler.apply {
-            filmsAdapter = FilmListRecyclerAdapter(object : FilmListRecyclerAdapter.OnItemClickListener{
+            filmsAdapter = FilmListRecyclerAdapter(object : FilmListRecyclerAdapter.OnItemClickListener {
                 override fun click(film: Film) {
                     //Создаем бандл и кладем туда объект с данными фильма
                     val bundle = Bundle()
